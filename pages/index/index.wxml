@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <button class="btn red" bindtap="getToken">获取Token</button>
+  <button class="btn red" bindtap="verifyToken">校验Token</button>
+  <button class="btn yellow" bindtap="getLatest">获取最新一期期刊</button>
+  <button class="btn yellow" bindtap="getNext">获取下一期期刊</button>
+  <button class="btn yellow" bindtap="getPrevious">获取上一期期刊</button>
+  <button class="btn yellow" bindtap="getLikeInfo">获取当前期刊点赞情况</button>
+  <button class="btn yellow" bindtap="getClassicInfo">获取当前期刊信息</button>
+  <button class="btn green" bindtap="like">点赞</button>
+  <button class="btn green" bindtap="likeCancel">取消点赞</button>
+</view>

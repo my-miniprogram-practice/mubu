@@ -1,0 +1,30 @@
+/**index.wxss**/
+
+.btn {
+  margin-bottom: 20rpx;
+  width: 100%;
+}
+
+.red {
+  background-color: red;
+  color: #fff;
+}
+
+.blue {
+  background-color: blue;
+  color: #fff;
+}
+
+.green {
+  background-color: green;
+  color: #fff;
+}
+
+.orange {
+  background-color: orange;
+  color: #fff;
+}
+
+.yellow {
+  background-color: yellow;
+}
