@@ -121,8 +121,8 @@ Page({
       url: 'http://localhost:3000/v1/like',
       method: 'POST',
       data: {
-        art_id: 1,
-        type: 100
+        art_id: 1002,
+        type: 400
       },
       header: {
         "Authorization": `Basic ${this._encode()}` // HTTP Auth-Basic规则
@@ -151,6 +151,33 @@ Page({
     })
   },
 
+  getHotBook() {
+    wx.request({
+      url: 'http://localhost:3000/v1/book/hot_list',
+      method: 'GET',
+      data: {},
+      header: {
+        "Authorization": `Basic ${this._encode()}` // HTTP Auth-Basic规则
+      },
+      success: (result) => {
+        console.log(result.data);
+      }
+    })
+  },
+
+  getBookDetail() {
+    wx.request({
+      url: 'http://localhost:3000/v1/book/1002/detail',
+      method: 'GET',
+      data: {},
+      header: {
+        "Authorization": `Basic ${this._encode()}` // HTTP Auth-Basic规则
+      },
+      success: (result) => {
+        console.log(result.data);
+      }
+    })
+  },
   _encode() {
     const name = wx.getStorageSync('token');
     const pass = '';

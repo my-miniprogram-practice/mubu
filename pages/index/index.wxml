@@ -9,4 +9,6 @@
   <button class="btn yellow" bindtap="getClassicInfo">获取当前期刊信息</button>
   <button class="btn green" bindtap="like">点赞</button>
   <button class="btn green" bindtap="likeCancel">取消点赞</button>
+  <button class="btn orange" bindtap="getHotBook">获取热门书籍列表</button>
+  <button class="btn orange" bindtap="getBookDetail">获取书籍详情</button>
 </view>
