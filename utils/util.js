@@ -14,6 +14,28 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+const toast = (msg) => {
+  wx.showToast({
+    title: msg,
+  })
+}
+
+const showModel = (content) => {
+  wx.showModal({
+    title: '返回结果',
+    content: content,
+    success(res) {
+      if (res.confirm) {
+        console.log('用户点击确定')
+      } else if (res.cancel) {
+        console.log('用户点击取消')
+      }
+    }
+  })
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime,
+  toast,
+  showModel
 }

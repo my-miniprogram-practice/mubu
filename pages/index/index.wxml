@@ -11,4 +11,6 @@
   <button class="btn green" bindtap="likeCancel">取消点赞</button>
   <button class="btn orange" bindtap="getHotBook">获取热门书籍列表</button>
   <button class="btn orange" bindtap="getBookDetail">获取书籍详情</button>
+
+  <image src="https://api.lizimu.top/images/movie.4.png"></image>
 </view>
