@@ -6,9 +6,9 @@ const {
   toast,
   showModel
 } = require('../../utils/util.js')
-// https://api.lizimu.top
-// http://localhost:3000
+
 const baseUrl = 'https://api.lizimu.top';
+// const baseUrl = 'http://localhost:3000';
 
 Page({
   data: {
